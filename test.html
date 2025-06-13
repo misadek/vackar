@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Planimetrie</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+</head>
+<body>
+
+    <div class="main-container">
+ 
+        <main class="main-content">
+            <div class="test-container" id="testContainer">
+                <div class="test-header">
+                    <h2 class="test-title">Test z Planimetrie</h2>
+                    <p class="test-description">Ověřte své znalosti základních geometrických útvarů a jejich vlastností</p>
+                </div>
+                
+                <div class="test-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="currentQuestion">1</div>
+                        <div class="stat-label">Otázka</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalQuestions">10</div>
+                        <div class="stat-label">Celkem</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="correctAnswers">0</div>
+                        <div class="stat-label">Správně</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="scorePercentage">0%</div>
+                        <div class="stat-label">Úspěšnost</div>
+                    </div>
+                </div>
+                
+                
+                <div class="test-controls">
+                    <button class="test-button" id="prevButton" disabled>Předchozí</button>
+                    <button class="test-button" id="nextButton">Další</button>
+                </div>
+            </div>
+            
+            <div class="result-container" id="resultContainer">
+                <div class="result-icon">🎉</div>
+                <h3 class="result-title">Test dokončen!</h3>
+                <div class="result-score" id="finalScore">0%</div>
+                <p class="result-message" id="resultMessage"></p>
+                <button class="test-button" onclick="window.location.href='matika.html'" id="restartButton">Na látku</button>
+
+            </div>
+        </main>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzyLearn | Planimetrie</title>
+    <link rel="stylesheet" href="styles/styles1.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <nav class="left-sidebar">
+            <div class="nav-header">
+                <h1 class="nav-title">Planimetrie</h1>
+            </div>
+            
+            <div class="nav-section">
+                <p class="nav-section-title">Základy</p>
+                <a class="nav-item active" data-section="intro">Úvod do planimetrie</a>
+                <a class="nav-item" data-section="points-lines">Body a přímky</a>
+                <a class="nav-item" data-section="angles">Úhly</a>
+            </div>
+            
+            <div class="nav-section">
+                <p class="nav-section-title">Trojúhelníky</p>
+                <a class="nav-item" data-section="triangles-basic">Základní vlastnosti</a>
+                <a class="nav-item" data-section="triangle-area">Obvod a obsah</a>
+                <a class="nav-item" data-section="pythagoras">Pythagorova věta</a>
+            </div>
+            
+            <div class="nav-section">
+                <p class="nav-section-title">Čtyřúhelníky</p>
+                <a class="nav-item" data-section="rectangles">Obdélníky a čtverce</a>
+                <a class="nav-item" data-section="parallelograms">Rovnoběžníky</a>
+            </div>
+            
+            <div class="nav-section">
+                <p class="nav-section-title">Kruhy</p>
+                <a class="nav-item" data-section="circles">Kruh a kružnice</a>
+            </div>
+            <div class="nav-section">
+                <a class="nav-item" data-section="sources">Další procvičení</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <section class="content-section active" id="intro">
+                <div class="section-header">
+                    <h2 class="section-title">Úvod do planimetrie</h2>
+                    <p class="section-subtitle">Planimetrie je část geometrie, která se zabývá studiem rovinných útvarů a jejich vlastností.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Co je planimetrie?</h3>
+                    <p>Planimetrie (z latinského "planus" = rovný a řeckého "metron" = míra) je odvětví geometrie, které se zabývá vlastnostmi útvarů v rovině. Studuje body, přímky, úhly, trojúhelníky, čtyřúhelníky, kruhy a další rovinné útvary.</p>
+                    
+                    <p>V planimetrii se učíme:</p>
+                    <ul style="color: #cbd5e1; margin-left: 2rem; line-height: 1.7;">
+                        <li>Základní geometrické útvary a jejich vlastnosti</li>
+                        <li>Výpočty obvodů a obsahů</li>
+                        <li>Vztahy mezi jednotlivými útvary</li>
+                        <li>Konstrukce geometrických útvarů</li>
+                    </ul>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="geometric-figure">
+                    <svg class="svg-figure" viewBox="0 0 400 300">
+
+                        <polygon points="100,50 50,150 150,150" class="shape-fill"/>
+                        <text x="100" y="45" class="label-text" text-anchor="middle">trojuhelník</text>
+                        
+
+                        <circle cx="300" cy="100" r="40" class="shape-fill"/>
+                        <text x="300" y="165" class="label-text" text-anchor="middle">kruh</text>
+                        
+
+                        <rect x="225" y="175" width="60" height="60" class="shape-fill"/>
+                        <text x="255" y="255" class="label-text" text-anchor="middle">čtverec</text>
+                        
+
+                        <line x1="50" y1="250" x2="150" y2="200" class="shape-stroke"/>
+                        <text x="100" y="275" class="label-text" text-anchor="middle">přímka</text>
+                    </svg>
+                </div>
+
+                <div class="content-block">
+                    <h3>Jak konstruovat základní útvary</h3>
+                    
+                    <div class="exercise-step">
+                        <span class="step-number">Krok 1</span>
+                        <p>Připravte si pravítko a kružítko. Začněte s jednoduchými útvary jako je úsečka.</p>
+                    </div>
+                    
+                    <div class="exercise-step">
+                        <span class="step-number">Krok 2</span>
+                        <p>Pro konstrukci trojúhelníku potřebujete znát délky tří stran nebo dvou stran a úhel mezi nimi.</p>
+                    </div>
+                    
+                    <div class="exercise-step">
+                        <span class="step-number">Krok 3</span>
+                        <p>Kružnice se konstruuje pomocí kružítka - nastavte poloměr a nakreslete kolem středového bodu.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content-section" id="points-lines">
+                <div class="section-header">
+                    <h2 class="section-title">Body a přímky</h2>
+                    <p class="section-subtitle">Základní stavební kameny všech geometrických útvarů.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Bod</h3>
+                    <p>Bod je základní geometrický útvar, který nemá rozměry - nemá délku, šířku ani výšku. Označuje se velkým písmenem (A, B, C, ...).</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Přímka</h3>
+                    <p>Přímka je nekonečně dlouhý útvar, který má pouze jeden rozměr. Označuje se malým písmenem (p, q, r, ...) nebo dvěma body, kterými prochází.</p>
+                </div>
+
+                <div class="geometric-figure">
+                    <svg class="svg-figure" viewBox="0 0 400 300">
+
+                        <circle cx="100" cy="100" r="3" fill="#3b82f6"/>
+                        <text x="110" y="105" class="label-text">A</text>
+                        
+                        <circle cx="200" cy="80" r="3" fill="#3b82f6"/>
+                        <text x="210" y="85" class="label-text">B</text>
+                        
+                        <circle cx="300" cy="120" r="3" fill="#3b82f6"/>
+                        <text x="310" y="125" class="label-text">C</text>
+                        
+
+                        <line x1="50" y1="200" x2="350" y2="180" class="shape-stroke"/>
+                        <text x="200" y="175" class="label-text">p</text>
+                        
+                        <line x1="100" y1="250" x2="250" y2="250" class="shape-stroke" stroke-width="3"/>
+                        <circle cx="100" cy="250" r="3" fill="#3b82f6"/>
+                        <circle cx="250" cy="250" r="3" fill="#3b82f6"/>
+                        <text x="90" y="270" class="label-text">D</text>
+                        <text x="260" y="270" class="label-text">E</text>
+                    </svg>
+                </div>
+
+                <div class="example-box">
+                    <div class="example-title">Příklad:</div>
+                    <p>Úsečka DE má délku 150 jednotek. Je to část přímky ohraničená dvěma body D a E.</p>
+                </div>
+            </section>
+
+            <section class="content-section" id="angles">
+                <div class="section-header">
+                    <h2 class="section-title">Úhly</h2>
+                    <p class="section-subtitle">Úhel vznikne protnutím dvěma polopřímek vycházejících ze společného bodu.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Definice úhlu</h3>
+                    <p>Úhel je část roviny ohraničená dvěma polopřímkami (rameny) vycházejícími ze společného bodu (vrchol úhlu). Velikost úhlu měříme ve stupních (°).</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Druhy úhlů podle velikosti:</h3>
+                    <p><strong>Ostrý úhel:</strong> 0° &lt; α &lt; 90°</p>
+                    <p><strong>Pravý úhel:</strong> α = 90°</p>
+                    <p><strong>Tupý úhel:</strong> 90° &lt; α &lt; 180°</p>
+                    <p><strong>Přímý úhel:</strong> α = 180°</p>
+                </div>
+
+                <div class="geometric-figure">
+                    <svg class="svg-figure" viewBox="0 0 400 300">
+                        <g transform="translate(100,80)">
+                            <line x1="0" y1="0" x2="60" y2="0" class="shape-stroke"/>
+                            <line x1="0" y1="0" x2="40" y2="-30" class="shape-stroke"/>
+                            <path d="M 20,0 A 20,20 0 0,0 13.5,-10" fill="none" stroke="#10b981" stroke-width="2"/>
+                            <text x="25" y="-5" class="label-text" font-size="12">45°</text>
+                            <text x="10" y="20" class="label-text">Ostrý</text>
+                        </g>
+                        
+                        <g transform="translate(250,80)">
+                            <line x1="0" y1="0" x2="50" y2="0" class="shape-stroke"/>
+                            <line x1="0" y1="0" x2="0" y2="-50" class="shape-stroke"/>
+                            <rect x="0" y="-15" width="15" height="15" fill="none" stroke="#10b981" stroke-width="2"/>
+                            <text x="20" y="-20" class="label-text" font-size="12">90°</text>
+                            <text x="10" y="20" class="label-text">Pravý</text>
+                        </g>
+                        
+                        <g transform="translate(100,200)">
+                            <line x1="0" y1="0" x2="60" y2="0" class="shape-stroke"/>
+                            <line x1="0" y1="0" x2="-30" y2="-40" class="shape-stroke"/>
+                            <path d="M 25,0 A 25,25 0 0,0 -12,-16" fill="none" stroke="#10b981" stroke-width="2"/>
+                            <text x="5" y="-15" class="label-text" font-size="12">120°</text>
+                            <text x="10" y="20" class="label-text">Tupý</text>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="content-section" id="triangles-basic">
+
+                <div class="section-header">
+                    <h2 class="section-title">Trojúhelníky - základní vlastnosti</h2>
+                    <p class="section-subtitle">Trojúhelník je jeden z nejdůležitějších geometrických útvarů.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Definice trojúhelníku</h3>
+                    <p>Trojúhelník je rovinný útvar ohraničený třemi úsečkami. Má tři vrcholy, tři strany a tři vnitřní úhly.</p>
+                </div>
+
+                <div class="formula-box">
+                    <div class="formula">Součet vnitřních úhlů trojúhelníku = 180°</div>
+                    <p style="margin-top: 1rem; color: #94a3b8;">α + β + γ = 180°</p>
+                </div>
+
+                <div class="geometric-figure">
+                    <svg class="svg-figure" viewBox="0 0 400 300">
+                        <polygon points="200,50 120,200 280,200" class="shape-fill"/>
+                        
+                        <circle cx="200" cy="50" r="3" fill="#e2e8f0"/>
+                        <circle cx="120" cy="200" r="3" fill="#e2e8f0"/>
+                        <circle cx="280" cy="200" r="3" fill="#e2e8f0"/>
+                        
+                        <text x="200" y="40" class="label-text" text-anchor="middle">A</text>
+                        <text x="110" y="205" class="label-text" text-anchor="middle">B</text>
+                        <text x="290" y="205" class="label-text" text-anchor="middle">C</text>
+                        
+                        <text x="160" y="130" class="label-text">c</text>
+                        <text x="240" y="130" class="label-text">b</text>
+                        <text x="200" y="215" class="label-text">a</text>
+                        
+                        <text x="200" y="70" class="label-text" font-size="12">α</text>
+                        <text x="135" y="185" class="label-text" font-size="12">β</text>
+                        <text x="265" y="185" class="label-text" font-size="12">γ</text>
+                    </svg>
+                </div>
+
+                <div class="example-box">
+                    <div class="example-title">Příklad:</div>
+                    <p>V trojúhelníku jsou dva úhly 60° a 70°. Jaký je třetí úhel?</p>
+                    <p><strong>Řešení:</strong> γ = 180° - 60° - 70° = 50°</p>
+                </div>
+
+                                <div class="section-header">
+                    <h2 class="section-title">Druhy trojúhelníků</h2>
+                    <p class="section-subtitle">Trojúhelníky dělíme podle stran i podle úhlů.</p>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Podle stran:</h3>
+                    <p><strong>Různostranný:</strong> všechny strany mají různé délky</p>
+                    <p><strong>Rovnoramenný:</strong> dvě strany mají stejnou délku</p>
+                    <p><strong>Rovnostranný:</strong> všechny strany mají stejnou délku</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Podle úhlů:</h3>
+                    <p><strong>Ostroúhlý:</strong> všechny úhly jsou ostré (&lt; 90°)</p>
+                    <p><strong>Pravoúhlý:</strong> jeden úhel je pravý (= 90°)</p>
+                    <p><strong>Tupoúhlý:</strong> jeden úhel je tupý (> 90°)</p>
+                </div>
+            </section>
+
+            <section class="content-section" id="triangle-area">
+                <div class="section-header">
+                    <h2 class="section-title">Obvod a obsah trojúhelníku</h2>
+                    <p class="section-subtitle">Základní výpočty pro trojúhelníky.</p>
+                </div>
+                
+                <div class="formula-box">
+                    <div class="formula">Obvod: o = a + b + c</div>
+                </div>
+
+                <div class="formula-box">
+                    <div class="formula">Obsah: S = (a × v_a) / 2</div>
+                    <p style="margin-top: 1rem; color: #94a3b8;">kde v_a je výška na stranu a</p>
+                </div>
+
+                <div class="example-box">
+                    <div class="example-title">Příklad:</div>
+                    <p>Trojúhelník má strany a = 6 cm, b = 8 cm, c = 10 cm. Výška na stranu a je 4 cm.</p>
+                    <p><strong>Obvod:</strong> o = 6 + 8 + 10 = 24 cm</p>
+                    <p><strong>Obsah:</strong> S = (6 × 4) / 2 = 12 cm²</p>
+                </div>
+            </section>
+
+<section class="content-section" id="pythagoras">
+    <div class="section-header">
+        <h2 class="section-title">Pythagorova věta</h2>
+        <p class="section-subtitle">Základní vztah v pravoúhlém trojúhelníku.</p>
+    </div>
+    
+    <div class="content-block">
+        <h3>Formulace věty</h3>
+        <p>Pythagorova věta platí pro pravoúhlé trojúhelníky. Říká, že součet obsahů čtverců nad odvěsnami se rovná obsahu čtverce nad přeponou.</p>
+    </div>
+
+    <div class="formula-box">
+        <div class="formula">c² = a² + b²</div>
+        <p style="margin-top: 1rem; color: #94a3b8;">kde c je přepona, a a b jsou odvěsny</p>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Příklad:</div>
+        <p>V pravoúhlém trojúhelníku ABC s pravým úhlem u vrcholu C jsou odvěsny a = 3 cm a b = 4 cm. Jak dlouhá je přepona c?</p>
+        <p><strong>Řešení:</strong> c² = 3² + 4² = 9 + 16 = 25 ⇒ c = √25 = 5 cm</p>
+    </div>
+
+    <div class="content-block">
+        <h3>Důležité poznámky</h3>
+        <p>1. Pythagorova věta platí pouze pro pravoúhlé trojúhelníky.</p>
+        <p>2. Lze ji použít i "obráceně" - pokud pro strany trojúhelníku platí a² + b² = c², pak je trojúhelník pravoúhlý.</p>
+        <p>3. V praxi se často používá k výpočtu vzdáleností nebo kontrolám pravých úhlů.</p>
+    </div>
+</section>
+
+
+<section class="content-section" id="rectangles">
+
+        <div class="section-header">
+        <h2 class="section-title">Čtyřúhelníky</h2>
+        <p class="section-subtitle">Geometrické útvary se čtyřmi stranami a čtyřmi vrcholy.</p>
+    </div>
+    
+    <div class="content-block">
+        <h3>Definice čtyřúhelníku</h3>
+        <p>Čtyřúhelník je rovinný útvar ohraničený čtyřmi úsečkami. Má čtyři vrcholy, čtyři strany a čtyři vnitřní úhly.</p>
+    </div>
+
+    <div class="formula-box">
+        <div class="formula">Součet vnitřních úhlů čtyřúhelníku = 360°</div>
+        <p style="margin-top: 1rem; color: #94a3b8;">α + β + γ + δ = 360°</p>
+    </div>
+
+    <div class="geometric-figure">
+        <svg class="svg-figure" viewBox="0 0 400 300">
+            <polygon points="100,50 50,150 150,250 250,150" class="shape-fill"/>
+            
+
+            <circle cx="100" cy="50" r="3" fill="#e2e8f0"/>
+            <circle cx="50" cy="150" r="3" fill="#e2e8f0"/>
+            <circle cx="150" cy="250" r="3" fill="#e2e8f0"/>
+            <circle cx="250" cy="150" r="3" fill="#e2e8f0"/>
+            
+
+            <text x="100" y="40" class="label-text">A</text>
+            <text x="40" y="155" class="label-text">B</text>
+            <text x="150" y="265" class="label-text">C</text>
+            <text x="255" y="155" class="label-text">D</text>
+            
+
+            <text x="70" y="100" class="label-text">a</text>
+            <text x="100" y="200" class="label-text">b</text>
+            <text x="200" y="200" class="label-text">c</text>
+            <text x="175" y="100" class="label-text">d</text>
+            
+
+            <text x="90" y="70" class="label-text" font-size="12">α</text>
+            <text x="70" y="140" class="label-text" font-size="12">β</text>
+            <text x="140" y="230" class="label-text" font-size="12">γ</text>
+            <text x="230" y="140" class="label-text" font-size="12">δ</text>
+        </svg>
+    </div>
+
+    <div class="content-block">
+        <h3>Druhy čtyřúhelníků</h3>
+        <p>1. <strong>Obecný čtyřúhelník:</strong> žádné speciální vlastnosti</p>
+        <p>2. <strong>Trapez:</strong> alespoň jedna dvojice rovnoběžných stran</p>
+        <p>3. <strong>Rovnoběžník:</strong> obě dvojice protilehlých stran rovnoběžné</p>
+        <p>4. <strong>Kosočtverec:</strong> všechny strany stejně dlouhé</p>
+        <p>5. <strong>Obdélník:</strong> všechny úhly pravé</p>
+        <p>6. <strong>Čtverec:</strong> všechny strany stejně dlouhé a všechny úhly pravé</p>
+    </div>
+
+    <div class="section-header">
+        <h2 class="section-title">Obdélníky a čtverce</h2>
+        <p class="section-subtitle">Speciální typy čtyřúhelníků s pravými úhly.</p>
+    </div>
+    
+    <div class="content-block">
+        <h3>Obdélník</h3>
+        <p>Obdélník je čtyřúhelník, který má všechny vnitřní úhly pravé (90°). Protilehlé strany jsou rovnoběžné a stejně dlouhé.</p>
+        
+        <div class="formula-box">
+            <div class="formula">Obvod: o = 2 × (a + b)</div>
+            <div class="formula" style="margin-top: 1rem;">Obsah: S = a × b</div>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h3>Čtverec</h3>
+        <p>Čtverec je zvláštní případ obdélníku, kde jsou všechny strany stejně dlouhé a všechny úhly pravé.</p>
+        
+        <div class="formula-box">
+            <div class="formula">Obvod: o = 4 × a</div>
+            <div class="formula" style="margin-top: 1rem;">Obsah: S = a × a = a²</div>
+        </div>
+    </div>
+
+    <div class="geometric-figure">
+        <svg class="svg-figure" viewBox="0 0 400 300">
+
+            <rect x="50" y="50" width="120" height="80" class="shape-fill"/>
+            <text x="110" y="145" class="label-text">a</text>
+            <text x="180" y="90" class="label-text">b</text>
+            <text x="110" y="30" class="label-text">Obdélník</text>
+            
+
+            <rect x="250" y="50" width="100" height="100" class="shape-fill"/>
+            <text x="300" y="170" class="label-text">a</text>
+            <text x="300" y="30" class="label-text">Čtverec</text>
+        </svg>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Příklad - obdélník:</div>
+        <p>Obdélník má strany 5 cm a 8 cm. Vypočítejte obvod a obsah.</p>
+        <p><strong>Obvod:</strong> o = 2 × (5 + 8) = 26 cm</p>
+        <p><strong>Obsah:</strong> S = 5 × 8 = 40 cm²</p>
+    </div>
+</section>
+
+
+<section class="content-section" id="parallelograms">
+    <div class="section-header">
+        <h2 class="section-title">Rovnoběžníky</h2>
+        <p class="section-subtitle">Čtyřúhelníky s oběma dvojicemi protilehlých stran rovnoběžnými.</p>
+    </div>
+    
+    <div class="content-block">
+        <h3>Vlastnosti rovnoběžníků</h3>
+        <p>1. Protilehlé strany jsou rovnoběžné a stejně dlouhé</p>
+        <p>2. Protilehlé úhly jsou shodné</p>
+        <p>3. Součet úhlů u každé strany je 180°</p>
+        <p>4. Úhlopříčky se navzájem půlí</p>
+    </div>
+
+    <div class="formula-box">
+        <div class="formula">Obsah: S = a × v<sub>a</sub></div>
+        <p style="margin-top: 1rem; color: #94a3b8;">kde v<sub>a</sub> je výška na stranu a</p>
+    </div>
+
+    <div class="content-block">
+        <h3>Speciální typy rovnoběžníků</h3>
+        <p><strong>Kosočtverec:</strong> všechny strany stejně dlouhé, úhlopříčky na sebe kolmé</p>
+        <p><strong>Kosodélník:</strong> obecný rovnoběžník bez pravých úhlů</p>
+        <p><strong>Obdélník a čtverec</strong> jsou také speciálními případy rovnoběžníku</p>
+    </div>
+</section>
+
+
+<section class="content-section" id="circles">
+    <div class="section-header">
+        <h2 class="section-title">Kruh a kružnice</h2>
+        <p class="section-subtitle">Množina všech bodů v rovině, které mají od daného bodu (středu) stejnou vzdálenost.</p>
+    </div>
+    
+    <div class="content-block">
+        <h3>Základní pojmy</h3>
+        <p><strong>Kružnice:</strong> je pouze "okraj" (obvodová čára)</p>
+        <p><strong>Kruh:</strong> zahrnuje i vnitřní body (kružnice + vnitřek)</p>
+        <p><strong>Poloměr (r):</strong> vzdálenost od středu k libovolnému bodu kružnice</p>
+        <p><strong>Průměr (d):</strong> dvojnásobek poloměru, d = 2r</p>
+    </div>
+
+    <div class="formula-box">
+        <div class="formula">Obvod kruhu: o = 2πr = πd</div>
+        <div class="formula" style="margin-top: 1rem;">Obsah kruhu: S = πr²</div>
+        <p style="margin-top: 1rem; color: #94a3b8;">π (pí) ≈ 3,14159</p>
+    </div>
+
+    <div class="example-box">
+        <div class="example-title">Příklad:</div>
+        <p>Kruh má poloměr 7 cm. Vypočítejte obvod a obsah.</p>
+        <p><strong>Obvod:</strong> o = 2 × π × 7 ≈ 43,98 cm</p>
+        <p><strong>Obsah:</strong> S = π × 7² ≈ 153,94 cm²</p>
+    </div>
+
+    <div class="content-block">
+        <h3>Důležité vlastnosti</h3>
+        <p>1. <strong>Tečna:</strong> přímka, která se kružnice dotýká právě v jednom bodě</p>
+        <p>2. <strong>Sečna:</strong> přímka, která kružnici protíná ve dvou bodech</p>
+        <p>3. <strong>Tětiva:</strong> úsečka spojující dva body kružnice</p>
+        <p>4. <strong>Výseč:</strong> část kruhu vymezená dvěma poloměry a obloukem</p>
+    </div>
+</section>
+
+<section class="content-section" id="sources">
+  <div class="section-header">
+    <h2 class="section-title">Zdroje na procvičování planimetrie</h2>
+    <p class="section-subtitle">Užitečné odkazy a aplikace pro interaktivní procvičování geometrie</p>
+  </div>
+
+  <div class="content-block">
+    <h3>Online cvičení a interaktivní úlohy</h3>
+    <ul style="color: #cbd5e1; margin-left: 2rem; line-height: 1.7;">
+      <li><a href="https://www.skolasnadhledem.cz/game/153" target="_blank" style="color: #3b82f6;">Školasnadhledem</a> – příklady a procvičování s vysvětlením</li>
+      <li><a href="https://www.umimematiku.cz/geometrie" target="_blank" style="color: #3b82f6;">Umímematiku</a> – příklady a procvičování s vysvětlením</li>
+      <li><a href="https://www.geogebra.org/geometry" target="_blank" style="color: #3b82f6;">GeoGebra Geometry</a> – online nástroj pro interaktivní konstrukce a procvičování</li>
+      <li><a href="https://www.math-exercises.com/planimetry" target="_blank" style="color: #3b82f6;">Math Exercises - Geometry</a> – příklady a testy online (anglicky)</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h3>Další videa a YouTube kanály</h3>
+    <ul style="color: #cbd5e1; margin-left: 2rem; line-height: 1.7;">
+      <li><a href="https://www.youtube.com/watch?v=Nvx6YRafxUc&list=PLD-MTmOzXT5Ntoq5GQibj4KuRhcGktJp9&ab_channel=Isibalo" target="_blank" style="color: #3b82f6;">MatematikaCZ</a> – česká videa k procvičování matematiky</li>
+      <li><a href="https://www.youtube.com/watch?v=wowe3AZaQyA&ab_channel=MarekVal%C3%A1%C5%A1ek" target="_blank" style="color: #3b82f6;">Math Antics</a> – základní matematické koncepty (anglicky)</li>
+      <li><a href="https://www.youtube.com/watch?v=6UvD-J-CdLM&ab_channel=MarekVal%C3%A1%C5%A1ek" target="_blank" style="color: #3b82f6;">3Blue1Brown</a> – vizualizace složitějších konceptů (anglicky)</li>
+    </ul>
+  </div>
+</section>
+
+
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="test-panel">
+                <div class="test-header">
+                    <h3 class="test-title">Procvičování</h3>
+                    <p class="test-description">Otestujte své znalosti aktuální kapitoly pomocí interaktivních cvičení.</p> 
+                </div>
+                <button class="test-button" onclick="window.location.href='test.html'">Spustit test</button>
+                <button class="test-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);" onclick="window.location.href='cau.html'">Přehled Materialu</button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="mobile-buttons">
+    <a href="test.html" class="mobile-button">Test</a>
+    <a href="cau.html" class="mobile-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Materiály</a>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
